@@ -2,7 +2,7 @@
 function App() {
   return (
     <div className="App">
-      Zerox MarketPlace
+      Zerox MarketPlace (CEO DEEPANK PUSHPAD)
     </div>
   );
 }
