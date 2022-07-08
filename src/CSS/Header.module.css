@@ -1,5 +1,5 @@
 .header{
-    height: 100px;
+    height: 60px;
     background-color: black;
     color: white;
 
@@ -18,8 +18,18 @@
     width: 40px;
 }
 .header_middle{
-    border: 1px solid red;
 }
-.header_right{
-    border:1px solid red;
+
+.header_right {
+    font-size: 32px;
+}
+
+.logo{
+    color: white;
+}
+
+.logo:hover{
+    transform: rotate(360deg);
+    color:palevioletred; 
+    transition-duration: .5s;
 }

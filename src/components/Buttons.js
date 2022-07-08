@@ -3,8 +3,11 @@ import { Link } from 'react-router-dom'
 import styles from '../CSS/Buttons.module.css'
 const Buttons = (props) => {
   return (
+    
     <>
-    <Link to='/home' className={styles.button}>HOME</Link>
+    {props.buttons.map((button,key)=>(
+    <Link to={button.location} className={styles.button} key={key}>{button.title}</Link>
+    ))}
     </>
   )
 }

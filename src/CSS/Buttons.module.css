@@ -1,0 +1,13 @@
+.button{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    margin:0px 10px;
+    /* border: 1px solid white; */
+}
+
+.button:hover{
+    text-decoration: underline;
+    transition-duration: .5s;
+    color: palevioletred;
+}
