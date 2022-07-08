@@ -1,0 +1,25 @@
+.header{
+    height: 100px;
+    background-color: black;
+    color: white;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.header >*{
+    margin: 0px 10px;
+}
+.header_left{
+}
+
+.header_left img{
+    width: 40px;
+}
+.header_middle{
+    border: 1px solid red;
+}
+.header_right{
+    border:1px solid red;
+}
