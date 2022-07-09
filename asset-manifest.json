@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/zerox-marketplace/static/css/main.ccad2c17.css",
-    "main.js": "/zerox-marketplace/static/js/main.24e0d915.js",
+    "main.css": "/zerox-marketplace/static/css/main.881809c0.css",
+    "main.js": "/zerox-marketplace/static/js/main.8689a418.js",
     "static/media/logo.png": "/zerox-marketplace/static/media/logo.da3f5226476bb5794283.png",
     "index.html": "/zerox-marketplace/index.html",
-    "main.ccad2c17.css.map": "/zerox-marketplace/static/css/main.ccad2c17.css.map",
-    "main.24e0d915.js.map": "/zerox-marketplace/static/js/main.24e0d915.js.map"
+    "main.881809c0.css.map": "/zerox-marketplace/static/css/main.881809c0.css.map",
+    "main.8689a418.js.map": "/zerox-marketplace/static/js/main.8689a418.js.map"
   },
   "entrypoints": [
-    "static/css/main.ccad2c17.css",
-    "static/js/main.24e0d915.js"
+    "static/css/main.881809c0.css",
+    "static/js/main.8689a418.js"
   ]
 }
