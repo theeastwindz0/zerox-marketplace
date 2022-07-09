@@ -1,0 +1,36 @@
+.parallex{
+    height: 800px;
+    background-image: url('../Images/Container_1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    /* image-resolution: 1366px 768px; */
+}
+
+.parallex_container{
+    position: absolute;
+    top:40%;
+
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.tag{
+    font-size: 40px;
+    font-family: 'Bangers', cursive;
+
+    text-decoration: underline;
+}
+
+.tagline{
+    font-size: 26px;
+}
+
+@media (max-width:800px){
+    .parallex{
+        background-image: url('../Images/Container_Mobile_1.jpg');
+        height: 600px;
+        background-attachment: scroll;
+    }
+}
