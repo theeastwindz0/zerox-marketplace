@@ -1,14 +1,16 @@
 {
   "files": {
-    "main.css": "/zerox-marketplace/static/css/main.881809c0.css",
-    "main.js": "/zerox-marketplace/static/js/main.8689a418.js",
+    "main.css": "/zerox-marketplace/static/css/main.9d230b85.css",
+    "main.js": "/zerox-marketplace/static/js/main.7b1815ab.js",
+    "static/media/Container_Mobile_1.jpg": "/zerox-marketplace/static/media/Container_Mobile_1.14a08f247499c0cc47d9.jpg",
+    "static/media/Container_1.jpg": "/zerox-marketplace/static/media/Container_1.6deae97d642100f7dc25.jpg",
     "static/media/logo.png": "/zerox-marketplace/static/media/logo.da3f5226476bb5794283.png",
     "index.html": "/zerox-marketplace/index.html",
-    "main.881809c0.css.map": "/zerox-marketplace/static/css/main.881809c0.css.map",
-    "main.8689a418.js.map": "/zerox-marketplace/static/js/main.8689a418.js.map"
+    "main.9d230b85.css.map": "/zerox-marketplace/static/css/main.9d230b85.css.map",
+    "main.7b1815ab.js.map": "/zerox-marketplace/static/js/main.7b1815ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.881809c0.css",
-    "static/js/main.8689a418.js"
+    "static/css/main.9d230b85.css",
+    "static/js/main.7b1815ab.js"
   ]
 }
