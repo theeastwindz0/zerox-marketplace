@@ -1,4 +1,6 @@
 import { Route, Routes } from "react-router-dom";
+import Branding from "./Components/Branding";
+import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Accessories from "./Pages/Accessories";
 import Airpords from "./Pages/Airpords";
@@ -14,6 +16,7 @@ function App() {
   return (
     <div>
       <Header/>
+      <Branding/>
       <Routes>
         <Route path="/" exact element={<Home/>}/>
         <Route path="/laptop" exact element={<Laptop/>}/>
@@ -25,6 +28,7 @@ function App() {
         <Route path="/airpords" exact element={<Airpords/>}/>
         <Route path="/bag" exact element={<Bag/>}/>
       </Routes>
+      <Footer/>
     </div>
   );
 }
