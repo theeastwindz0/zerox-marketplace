@@ -6,7 +6,7 @@ const Buttons = (props) => {
     
     <>
     {props.buttons.map((button,key)=>(
-    <Link to={button.location} className={styles.button} key={key}>{button.title}</Link>
+    <Link to={button.location} onClick={props.onClick} className={styles.button} key={key}>{button.title}</Link>
     ))}
     </>
   )
