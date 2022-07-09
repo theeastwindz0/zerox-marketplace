@@ -15,7 +15,7 @@ const Header = () => {
   }
 
   const headerOverlayToggleOff=()=>{
-    document.getElementById("headerOverlay").style.top="-100%";
+    document.getElementById("headerOverlay").style.top="-150%";
   }
 
   const ctx = useContext(navigationContext);
@@ -42,23 +42,22 @@ const Header = () => {
             <img src={logo} alt="logo" />
           </Link>
         </div>
-        <div className={styles.header_middle}></div>
         <div className={styles.header_right}>
           <Link to="/bag">
             <FontAwesomeIcon className={styles.logo} icon={faBagShopping} />
           </Link>
-          <Link to="/bag">
-            <FontAwesomeIcon onClick={headerOverlayToggleOn} className={styles.logo} icon={faBars} />
-          </Link>
+          <div onClick={headerOverlayToggleOn}>
+            <FontAwesomeIcon className={styles.logo} icon={faBars} />
+          </div>
         </div>
       </div>
       <div id="headerOverlay" className={styles.header_overlay}>
       <div className={styles.submenu}>
               <Buttons onClick={headerOverlayToggleOff} buttons={ctx.buttons}></Buttons>
             </div>
-      <Link to="/bag">
-            <FontAwesomeIcon onClick={headerOverlayToggleOff} className={styles.crossIcon} icon={faXmark} />
-          </Link>
+            <div onClick={headerOverlayToggleOff}>
+            <FontAwesomeIcon  className={styles.crossIcon} icon={faXmark} />
+            </div>
       </div>
     </NavigationProvider>
   );
