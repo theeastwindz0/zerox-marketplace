@@ -7,8 +7,23 @@
 
 }
 
+.FlexKit_2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding:50px;
+  }
+
+
 @media(max-width:900px) {
     .gridLayout2{
         grid-template-columns: 1fr;
+    }
+
+    .FlexKit_2{
+        flex-direction: column;
+
+        padding: 10px;
     }
 }

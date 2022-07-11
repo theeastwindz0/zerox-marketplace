@@ -11,8 +11,34 @@ import Mobile from "./Pages/Mobile";
 import Support from "./Pages/Support";
 import Tablet from "./Pages/Tablet";
 import Watch from "./Pages/Watch";
+import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
 
 function App() {
+//   const Pages=[{
+//     path:'/',
+//     ele:<Home/>
+//   },
+//   {
+//     path:'/laptop',
+//     ele:<Laptop/>
+//   },
+//   {
+//     path:'/mobile',
+//     ele:<Home/>
+//   },
+//   {
+//     path:'/',
+//     ele:<Home/>
+//   },
+//   {
+//     path:'/',
+//     ele:<Home/>
+//   },
+//   {
+//     path:'/',
+//     ele:<Home/>
+//   },
+// ]
   return (
     <div>
       <Header/>
@@ -27,6 +53,7 @@ function App() {
         <Route path="/support" exact element={<Support/>}/>
         <Route path="/airpords" exact element={<Airpords/>}/>
         <Route path="/bag" exact element={<Bag/>}/>
+        <Route path="/macbookairm1" element={<MacbookAirM1/>}/>
       </Routes>
       <Footer/>
     </div>
