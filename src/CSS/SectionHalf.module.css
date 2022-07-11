@@ -7,10 +7,10 @@
 } */
 .SectionHalf{
     position: relative;
-    width: 95%;
+    width: 100%;
     border: 1px solid black;
 
-    margin: 10px;
+    /* margin: 10px; */
     padding: 10px;
 
     box-sizing: border-box;
@@ -32,5 +32,13 @@
 .sectionHalf_box3 img{
  width: 100%;
  height: auto;
+}
 
+@media(max-width:900px) {
+    .SectionHalf{
+        width: 100%;
+    }
+    .SectionHalf >*{
+        margin: 0;
+    }
 }

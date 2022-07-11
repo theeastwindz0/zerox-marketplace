@@ -1,0 +1,45 @@
+.productCard{
+    border: 1px solid black;
+    width: 100%;
+
+    text-align: center;
+
+    padding: 20px 10px;
+ 
+    box-sizing: border-box;
+}
+
+.icon{
+    font-size: 28px;
+}
+
+.button1{
+    padding:4px;
+    outline: none;
+    border: none;
+    text-align: center;
+    margin: 0 0 20px 0px;
+
+    background-color:black;
+
+    color: white;
+    width: 20%;
+    height: 32px;
+    cursor: pointer;
+
+}
+
+.button1 a{
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width:900px){
+    .productCard{
+        width: 100%;
+    }
+
+    .button1{
+        width: 40%;
+    }
+}

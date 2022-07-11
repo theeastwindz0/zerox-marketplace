@@ -2,8 +2,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding: 20px;
-
     grid-row-gap: 10px;
+    grid-column-gap: 10px;
+
 }
 
 @media(max-width:900px) {

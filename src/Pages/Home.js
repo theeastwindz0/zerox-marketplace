@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Parallex from '../Components/Parallex'
 import SectionHalf from '../Components/SectionHalf'
 import Container_1 from '../Images/Container_1.jpg'
@@ -9,6 +9,11 @@ import section_image_2 from '../Images/section_image_2.jpg'
 import section_image_3 from '../Images/section_image_3.jpg'
 import section_image_4 from '../Images/section_image_4.jpg'
 const Home = () => {
+
+  useEffect(() => {
+    window.scroll(0,0);
+  }, [])
+  
   const dts={
     parallexImage:Container_1,
     parallexImageMobile:Container_Mobile_1,
