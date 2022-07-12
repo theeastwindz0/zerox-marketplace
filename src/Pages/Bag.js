@@ -1,9 +1,11 @@
-import React from 'react'
+import React from "react";
 
 const Bag = () => {
   return (
-    <div>Bag</div>
-  )
-}
+    <>
+     Bag
+    </>
+  );
+};
 
-export default Bag
+export default Bag;

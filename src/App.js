@@ -11,52 +11,53 @@ import Mobile from "./Pages/Mobile";
 import Support from "./Pages/Support";
 import Tablet from "./Pages/Tablet";
 import Watch from "./Pages/Watch";
+import CartProvider from "./Store/CartProvider";
 import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
 
 function App() {
-//   const Pages=[{
-//     path:'/',
-//     ele:<Home/>
-//   },
-//   {
-//     path:'/laptop',
-//     ele:<Laptop/>
-//   },
-//   {
-//     path:'/mobile',
-//     ele:<Home/>
-//   },
-//   {
-//     path:'/',
-//     ele:<Home/>
-//   },
-//   {
-//     path:'/',
-//     ele:<Home/>
-//   },
-//   {
-//     path:'/',
-//     ele:<Home/>
-//   },
-// ]
+  //   const Pages=[{
+  //     path:'/',
+  //     ele:<Home/>
+  //   },
+  //   {
+  //     path:'/laptop',
+  //     ele:<Laptop/>
+  //   },
+  //   {
+  //     path:'/mobile',
+  //     ele:<Home/>
+  //   },
+  //   {
+  //     path:'/',
+  //     ele:<Home/>
+  //   },
+  //   {
+  //     path:'/',
+  //     ele:<Home/>
+  //   },
+  //   {
+  //     path:'/',
+  //     ele:<Home/>
+  //   },
+  // ]
   return (
-    <div>
-      <Header/>
-      <Branding/>
+    <CartProvider>
+      <Header />
+      <Branding />
       <Routes>
-        <Route path="/" exact element={<Home/>}/>
-        <Route path="/laptop" exact element={<Laptop/>}/>
-        <Route path="/mobile" exact element={<Mobile/>}/>
-        <Route path="/tablet" exact element={<Tablet/>}/>
-        <Route path="/accessories" exact element={<Accessories/>}/>
-        <Route path="/watch" exact element={<Watch/>}/>
-        <Route path="/support" exact element={<Support/>}/>
-        <Route path="/airpords" exact element={<Airpords/>}/>
-        <Route path="/bag" exact element={<Bag/>}/>
-        <Route path="/macbookairm1" element={<MacbookAirM1/>}/>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/laptop" exact element={<Laptop />} />
+        <Route path="/mobile" exact element={<Mobile />} />
+        <Route path="/tablet" exact element={<Tablet />} />
+        <Route path="/accessories" exact element={<Accessories />} />
+        <Route path="/watch" exact element={<Watch />} />
+        <Route path="/support" exact element={<Support />} />
+        <Route path="/airpords" exact element={<Airpords />} />
+        <Route path="/bag" exact element={<Bag />} />
+        <Route path="/macbookairm1" element={<MacbookAirM1 />} />
       </Routes>
-      <Footer/>
-    </div>
+      <Footer />
+    </CartProvider>
   );
 }
 

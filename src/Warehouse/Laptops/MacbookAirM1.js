@@ -13,12 +13,12 @@ const MacbookAirM1 = () => {
         pDescription:
           "Im a product description. Im a great place to include more information about your product. Buyers like to know what theyrgetting before they purchase.",
     
-        pID: "MBA M1",
-        pPrice: "99999",
+        pID: "MBAM1",
+        pPrice: 99999,
         pTags: [],
       }
   return (
-     <><ProductDetailed dataToReceive={dataToSend}/></>
+     <><ProductDetailed dtr={dataToSend}/></>
   )
 }
 
