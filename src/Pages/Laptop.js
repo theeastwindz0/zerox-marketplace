@@ -22,7 +22,7 @@ const Laptop = () => {
     tagline:'World Best Selling Laptop',
     price:1199,
     new:true,
-    detailsPath:'/laptop',
+    detailsPath:'/macbookairm2',
     productImage:modal
   },
   {

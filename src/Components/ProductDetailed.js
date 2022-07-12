@@ -22,6 +22,7 @@ const ProductDetailed = (props) => {
   const addItemToCart=()=>{
     ctx.addItem({
       name:props.dtr.pName,
+      pImage:props.dtr.pSmallImage,
       id:props.dtr.pID,
       amount:1,
       description:props.dtr.pDescription,

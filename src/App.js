@@ -1,3 +1,4 @@
+import styles from './CSS/App.module.css'
 import { Route, Routes } from "react-router-dom";
 import Branding from "./Components/Branding";
 import Footer from "./Components/Footer";
@@ -13,6 +14,7 @@ import Tablet from "./Pages/Tablet";
 import Watch from "./Pages/Watch";
 import CartProvider from "./Store/CartProvider";
 import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
+import MacbookAirM2 from "./Warehouse/Laptops/MacbookAirM2";
 
 function App() {
   //   const Pages=[{
@@ -42,21 +44,26 @@ function App() {
   // ]
   return (
     <CartProvider>
-      <Header />
-      <Branding />
-      <Routes>
-        <Route path="/" exact element={<Home />} />
-        <Route path="/laptop" exact element={<Laptop />} />
-        <Route path="/mobile" exact element={<Mobile />} />
-        <Route path="/tablet" exact element={<Tablet />} />
-        <Route path="/accessories" exact element={<Accessories />} />
-        <Route path="/watch" exact element={<Watch />} />
-        <Route path="/support" exact element={<Support />} />
-        <Route path="/airpords" exact element={<Airpords />} />
-        <Route path="/bag" exact element={<Bag />} />
-        <Route path="/macbookairm1" element={<MacbookAirM1 />} />
-      </Routes>
-      <Footer />
+      <div className={styles.page_container}>
+        <div className={styles.content_wrap}>
+          <Header />
+          <Branding />
+          <Routes>
+            <Route path="/" exact element={<Home />} />
+            <Route path="/laptop" exact element={<Laptop />} />
+            <Route path="/mobile" exact element={<Mobile />} />
+            <Route path="/tablet" exact element={<Tablet />} />
+            <Route path="/accessories" exact element={<Accessories />} />
+            <Route path="/watch" exact element={<Watch />} />
+            <Route path="/support" exact element={<Support />} />
+            <Route path="/airpords" exact element={<Airpords />} />
+            <Route path="/bag" exact element={<Bag />} />
+            <Route path="/macbookairm1" element={<MacbookAirM1 />} />
+            <Route path="/macbookairm2" element={<MacbookAirM2 />} />
+          </Routes>
+        </div>
+        <Footer/>
+      </div>
     </CartProvider>
   );
 }
