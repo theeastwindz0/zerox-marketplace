@@ -2,12 +2,12 @@ import React from "react";
 import ProductDetailed from "../../Components/ProductDetailed";
 import allItems from "../../Store/Data";
 
-const MacbookAirM1 = () => {
+const IPhone13ProMax = () => {
   return (
     <>
-      <ProductDetailed dtr={allItems[0]} />
+      <ProductDetailed dtr={allItems[3]} />
     </>
   );
 };
 
-export default MacbookAirM1;
+export default IPhone13ProMax;

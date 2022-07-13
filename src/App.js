@@ -15,6 +15,8 @@ import Watch from "./Pages/Watch";
 import CartProvider from "./Store/CartProvider";
 import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
 import MacbookAirM2 from "./Warehouse/Laptops/MacbookAirM2";
+import MacBookProM1 from './Warehouse/Laptops/MacBookProM1';
+import IPhone13ProMax from './Warehouse/Moblies/IPhone13ProMax';
 
 function App() {
   //   const Pages=[{
@@ -60,6 +62,8 @@ function App() {
             <Route path="/bag" exact element={<Bag />} />
             <Route path="/macbookairm1" element={<MacbookAirM1 />} />
             <Route path="/macbookairm2" element={<MacbookAirM2 />} />
+            <Route path="/macbookprom1" element={<MacBookProM1/>}/>
+            <Route path="/iphone13promax" element={<IPhone13ProMax/>}/>
           </Routes>
         </div>
         <Footer/>

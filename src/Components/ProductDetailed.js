@@ -21,14 +21,7 @@ const ProductDetailed = (props) => {
   const ctx=useContext(CartContext);
 
   const addItemToCart=()=>{
-    ctx.addItem({
-      name:props.dtr.pName,
-      pImage:props.dtr.pSmallImage,
-      id:props.dtr.pID,
-      amount:1,
-      description:props.dtr.pDescription,
-      price:props.dtr.pPrice,
-      location:props.dtr.location
+    ctx.addItem({id:props.dtr.id,amount:1
     })
   }
   const [currentImage, SetCurrentImage] = useState(
@@ -48,18 +41,18 @@ const ProductDetailed = (props) => {
     <>
       <div className={gridLayout.FlexKit_2}>
         <div className={styles.box_1}>
-          <h4 className={styles.title}>Products/{props.dtr.pName}</h4>
+          <h4 className={styles.title}>Products/{props.dtr.name}</h4>
           <div className={styles.box_1_Image}>
             <img
               id="productImage"
-              alt={props.pName + "Image"}
+              alt={props.name + "Image"}
               src={currentImage}
             />
           </div>
           <div className={styles.box_1_Images_Tab}>
             {props.dtr.pImages.map((element, i) => (
               <img
-                alt={props.pName + "Image"}
+                alt={props.name + "Image"}
                 key={i}
                 onClick={() => onImageTabButtonHandler(element)}
                 src={element}
@@ -67,15 +60,15 @@ const ProductDetailed = (props) => {
             ))}
           </div>
           <div className={styles.box_1_Text}>
-            {props.dtr.pDescription}
+            {props.dtr.description}
           </div>
         </div>
 
         <div className={styles.box_2}>
           <div className={styles.box_2_Top_Part}>
-            <h2>{props.dtr.pName}</h2>
-            <p>{props.dtr.pID}</p>
-            <h2 className={styles.price}>{"₹" + props.dtr.pPrice}</h2>
+            <h2>{props.dtr.name}</h2>
+            <p>{props.dtr.id}</p>
+            <h2 className={styles.price}>{"₹" + props.dtr.price}</h2>
             {/* <form className={styles.form}> */}
             <label>Quantity</label>
             <input type="number" min="1" max="1" defaultValue={1}></input>
