@@ -17,7 +17,7 @@ import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
 import MacbookAirM2 from "./Warehouse/Laptops/MacbookAirM2";
 import MacBookProM1 from './Warehouse/Laptops/MacBookProM1';
 import IPhone13ProMax from './Warehouse/Moblies/IPhone13ProMax';
-
+import { ReactDOM } from 'react-dom';
 function App() {
   //   const Pages=[{
   //     path:'/',

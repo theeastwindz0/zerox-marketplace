@@ -99,19 +99,18 @@ const allItems = [
     pImage: ip13_3,
     description: (
       <>
-        <p>Apple M1 chip with 7‑core CPU, 8‑core GPU, 16‑core Neural Engine</p>
-        <p>8GB unified memory</p>
-        <p>256GB SSD storage</p>
-        <p>13.3-inch Liquid Retina display with True Tone</p>
-        <p>720 p FaceTime HD camera</p>
-        <p> USB charging port</p>
-        <p> Two Thunderbolt / USB 4 ports</p>
-        <p>30W USB-C Power Adapter</p>
-        <p>Backlit Magic Keyboard with Touch ID - US English</p>
+        <p>Apple A15 Bionic (5 nm)</p>
+        <p>Hexa-core, 64-bit</p>
+        <p>128GB, not expandable</p>
+        <p>Triple camera setup</p>
+        <p>Back: Glass; Frame: Stainless steel</p>
+        <p> Earpiece, Loudspeaker</p>
+        <p>Graphite, Gold, Silver, Sierra Blue
+</p>
       </>
     ),
     id: "iPhone13ProMax",
-    price: 69990,
+    price: 129990,
     pTags: [],
     location: "/iphone13promax",
     amount: 1,

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styles from "../CSS/Header.module.css";
 import logo from "../Images/logo.png";
@@ -7,8 +7,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
 import NavigationProvider from "../Store/NavigationProvider";
 import navigationContext from "../Store/NavigationContext";
+import CartContext from "../Store/CartContext";
 
 const Header = () => {
+  const ctx = useContext(navigationContext);
+  const cartCtx=useContext(CartContext);
+
+  const [itemChanged,setItemChanged]=useState(false);
+  const btnClasses=`${styles.logo} ${itemChanged?styles.bump:''}`;
 
   const headerOverlayToggleOn=()=>{
     document.getElementById("headerOverlay").style.top="0%";
@@ -18,7 +24,20 @@ const Header = () => {
     document.getElementById("headerOverlay").style.top="-150%";
   }
 
-  const ctx = useContext(navigationContext);
+  useEffect(() => {
+    if(cartCtx.totalAmount===0)return;
+    setItemChanged(true);
+
+    const timer=setTimeout(() => {
+      setItemChanged(false);
+    }, 500);
+  
+    return () => {
+      clearTimeout(timer);
+    }
+  }, [cartCtx.totalAmount])
+  
+
   return (
     <NavigationProvider>
       <div className={styles.header}>
@@ -32,7 +51,7 @@ const Header = () => {
         </div>
         <div className={styles.header_right}>
           <Link to="/bag">
-            <FontAwesomeIcon className={styles.logo} icon={faBagShopping} />
+            <FontAwesomeIcon className={btnClasses} icon={faBagShopping} />
           </Link>
         </div>
       </div>
@@ -46,9 +65,8 @@ const Header = () => {
           <div className={styles.header_right_cart}>
 
           <Link to="/bag">
-            <FontAwesomeIcon className={styles.logo} icon={faBagShopping} />
+            <FontAwesomeIcon className={btnClasses} icon={faBagShopping} />
           </Link>
-          <span style={{fontSize:'4'}}>8</span>
           </div>
           <div onClick={headerOverlayToggleOn}>
             <FontAwesomeIcon className={styles.logo} icon={faBars} />
