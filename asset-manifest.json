@@ -1,21 +1,28 @@
 {
   "files": {
-    "main.css": "/zerox-marketplace/static/css/main.4d5b1b32.css",
-    "main.js": "/zerox-marketplace/static/js/main.dec05214.js",
+    "main.css": "/zerox-marketplace/static/css/main.bcf376ce.css",
+    "main.js": "/zerox-marketplace/static/js/main.92e22a9b.js",
+    "static/media/mba_m2_large2.jpeg": "/zerox-marketplace/static/media/mba_m2_large2.de54b55c41f762904d82.jpeg",
+    "static/media/mba_m2_large1.jpeg": "/zerox-marketplace/static/media/mba_m2_large1.20071e9580e2515cde76.jpeg",
+    "static/media/mba_m1_large1.jpeg": "/zerox-marketplace/static/media/mba_m1_large1.e2a304f8f32ba6e7e798.jpeg",
+    "static/media/mba_m1_large2.jpeg": "/zerox-marketplace/static/media/mba_m1_large2.67a4037f787a89ba06f6.jpeg",
     "static/media/Container_Mobile_1.jpg": "/zerox-marketplace/static/media/Container_Mobile_1.3b4ffd624650bcc02570.jpg",
+    "static/media/mba_m2_large3.jpeg": "/zerox-marketplace/static/media/mba_m2_large3.9c4bf41de51fead48158.jpeg",
     "static/media/section_image_3.jpg": "/zerox-marketplace/static/media/section_image_3.9c174e6ce12eb63b22e5.jpg",
+    "static/media/mba_m1_large3.jpeg": "/zerox-marketplace/static/media/mba_m1_large3.3b45261c0046a5344329.jpeg",
     "static/media/Container_1.jpg": "/zerox-marketplace/static/media/Container_1.cbb707c3d5cc3f5b5c2c.jpg",
+    "static/media/mba_m2_small.jpeg": "/zerox-marketplace/static/media/mba_m2_small.463b512bbe03c4496987.jpeg",
     "static/media/section_image_1.jpg": "/zerox-marketplace/static/media/section_image_1.e8b2ad0bcde32b15a0ad.jpg",
     "static/media/section_image_2.jpg": "/zerox-marketplace/static/media/section_image_2.a2fe6bb6bf18b2785815.jpg",
     "static/media/logo.png": "/zerox-marketplace/static/media/logo.da3f5226476bb5794283.png",
     "static/media/section_image_4.jpg": "/zerox-marketplace/static/media/section_image_4.2ed7af2271e7516f75ec.jpg",
     "static/media/mba_m1_small.png": "/zerox-marketplace/static/media/mba_m1_small.35af3bce625697e99fce.png",
     "index.html": "/zerox-marketplace/index.html",
-    "main.4d5b1b32.css.map": "/zerox-marketplace/static/css/main.4d5b1b32.css.map",
-    "main.dec05214.js.map": "/zerox-marketplace/static/js/main.dec05214.js.map"
+    "main.bcf376ce.css.map": "/zerox-marketplace/static/css/main.bcf376ce.css.map",
+    "main.92e22a9b.js.map": "/zerox-marketplace/static/js/main.92e22a9b.js.map"
   },
   "entrypoints": [
-    "static/css/main.4d5b1b32.css",
-    "static/js/main.dec05214.js"
+    "static/css/main.bcf376ce.css",
+    "static/js/main.92e22a9b.js"
   ]
 }
