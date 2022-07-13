@@ -16,7 +16,7 @@ const ProductCard = (props) => {
       {props.dtr.new && <p style={{ color: "red" }}>New</p>}
       <h2>{props.dtr.title}</h2>
       <h4>{props.dtr.tagline}</h4>
-      <h3 style={{ color: "red" }}> ${props.dtr.price}</h3>
+      <h3 style={{ color: "red" }}> ₹{props.dtr.price}</h3>
       <div>
         <Link to={props.dtr.detailsPath}>
           <button className={styles.button1}>DETAILS</button>

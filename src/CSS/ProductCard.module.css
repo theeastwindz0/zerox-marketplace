@@ -9,6 +9,11 @@
     box-sizing: border-box;
 }
 
+.productCard img{
+    width: 250px;
+    height: auto;
+}
+
 .icon{
     font-size: 28px;
 }

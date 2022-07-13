@@ -8,6 +8,10 @@
   margin: 20px 0px;
 }
 
+.box_1 img{
+  width: 250px;
+}
+
 .box_2,.box_2_buttons{
   display: flex;
   flex-direction: row;

@@ -2,7 +2,9 @@ import React from 'react'
 import { useEffect } from 'react'
 import ProductCard from '../Components/ProductCard'
 import styles from '../CSS/GridLayout.module.css'
-import modal from "../Images/Laptops/MacbookAirM1/mba_m1_small.png";
+import m1air from "../Images/Laptops/MacbookAirM1/mba_m1_small.png";
+import m2air from "../Images/Laptops/MacbookAirM2/mba_m2_small.jpeg";
+
 
 const Laptop = () => {
   useEffect(() => {
@@ -12,18 +14,18 @@ const Laptop = () => {
   const dts=[{
     title:'Macbook Air M1',
     tagline:'World Best Selling Laptop',
-    price:999,
+    price:99999,
     new:false,
     detailsPath:'/macbookairm1',
-    productImage:modal
+    productImage:m1air
   },
   {
     title:'Macbook Air M2',
     tagline:'World Best Selling Laptop',
-    price:1199,
+    price:120000,
     new:true,
     detailsPath:'/macbookairm2',
-    productImage:modal
+    productImage:m2air
   },
   {
     title:'Macbook Pro M1',
@@ -31,7 +33,7 @@ const Laptop = () => {
     price:1199,
     new:false,
     detailsPath:'/laptop',
-    productImage:modal
+    productImage:m1air
   },
   {
     title:'Macbook Pro M2',
@@ -39,7 +41,7 @@ const Laptop = () => {
     price:1299,
     new:false,
     detailsPath:'/',
-    productImage:modal
+    productImage:m1air
   },
   ]
 

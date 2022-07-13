@@ -54,6 +54,15 @@ const cartReducer = (state, action) => {
       items: state.items,
       totalAmount: state.totalAmount,
     };
+  } else if (action.type === "TRASH") {
+    const existingCartItemIndex=state.items.findIndex((item)=>item.id===action.id)
+    let updatedItems;
+    console.log(existingCartItemIndex);
+    updatedItems = state.items.filter((item) => item.id !== action.id);
+    return{
+      items:updatedItems,
+      totalAmount:state.totalAmount
+    }
   }
   if (action.type === "RESET") return defaultCartState;
 
@@ -74,9 +83,12 @@ const CartProvider = (props) => {
     dispatchCartState({ type: "REMOVE", id: id });
   };
 
-  const resetCartHandler=()=>
-  {
-    dispatchCartState({type:'RESET'});
+  const resetCartHandler = () => {
+    dispatchCartState({ type: "RESET" });
+  };
+
+  const trashHandler=(id)=>{
+    dispatchCartState({type:"TRASH",id:id});
   }
 
   const cartContext = {
@@ -84,7 +96,8 @@ const CartProvider = (props) => {
     totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
-    resetCart:resetCartHandler
+    resetCart: resetCartHandler,
+    trash:trashHandler
   };
   return (
     <CartContext.Provider value={cartContext}>

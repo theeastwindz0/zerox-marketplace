@@ -14,6 +14,7 @@ import gridLayout from "../CSS/GridLayout.module.css";
 import buttons from "../CSS/MultipleButtons.module.css";
 import { useContext, useEffect, useState } from "react";
 import CartContext from "../Store/CartContext";
+import { Link } from "react-router-dom";
 
 const ProductDetailed = (props) => {
 
@@ -26,7 +27,8 @@ const ProductDetailed = (props) => {
       id:props.dtr.pID,
       amount:1,
       description:props.dtr.pDescription,
-      price:props.dtr.pPrice
+      price:props.dtr.pPrice,
+      location:props.dtr.location
     })
   }
   const [currentImage, SetCurrentImage] = useState(
@@ -36,6 +38,7 @@ const ProductDetailed = (props) => {
   const onImageTabButtonHandler = (item) => {
     SetCurrentImage(item);
   };
+
 
   useEffect(() => {
     window.scroll(0, 0);
@@ -75,10 +78,10 @@ const ProductDetailed = (props) => {
             <h2 className={styles.price}>{"₹" + props.dtr.pPrice}</h2>
             {/* <form className={styles.form}> */}
             <label>Quantity</label>
-            <input type="number" min="1" max="5" defaultValue={1}></input>
+            <input type="number" min="1" max="1" defaultValue={1}></input>
             {/* </form> */}
             <button className={buttons.button1} onClick={addItemToCart}>ADD TO CART</button>
-            <button className={buttons.button1}>BUY NOW</button>
+            <Link to='/bag'><button style={{width:'100%', height:'32px'}} onClick={addItemToCart} className={buttons.button1}>BUY NOW</button></Link>
           </div>
           <div className={styles.box_2_Bottom_Part}>
             <h2>SHIPPING</h2>

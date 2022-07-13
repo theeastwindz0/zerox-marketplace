@@ -4,6 +4,7 @@
 //   price: 499,
 // };
 import React, {  useContext } from "react";
+import { Link } from "react-router-dom";
 import styles from "../CSS/CartItem.module.css";
 import buttons from "../CSS/MultipleButtons.module.css";
 import CartContext from "../Store/CartContext";
@@ -18,13 +19,13 @@ const CartItem = (props) => {
   }
 
   const removeItem=()=>{
-      ctx.removeItem({id:props.dtr.id});
+      ctx.trash({id:props.dtr.id});
   }
 
   return (
     <div className={styles.cart_item}>
       <div className={styles.box_1}>
-        <img src={props.dtr.pImage} alt="Product Sample"/>
+        <Link to={props.dtr.location}><img src={props.dtr.pImage} alt="Product Sample"/></Link>
       </div>
       <div className={styles.box_2}>
         <h1>{props.dtr.name}</h1>
