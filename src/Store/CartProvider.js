@@ -30,40 +30,44 @@ const cartReducer = (state, action) => {
       items: updatedItems,
       totalAmount: updatedAmount,
     };
-  } else if (action.type === "REMOVE") {
-    // eslint-disable-next-line
-    const existingCartItemIndex = state.items.findIndex(
-      (item) => item.id === action.id
-    );
+  }
 
-    // const existingCartItem = state.items[existingCartItemIndex];
-    // const updatedAmount = state.totalAmount - existingCartItem.price;
-    // let updatedItems;
-    // if (existingCartItem.amount === 1) {
-    //   updatedItems = state.items.filter((item) => item.id !== action.id);
-    // } else {
-    //   const updatedItem = {
-    //     ...existingCartItem,
-    //     amount: existingCartItem.amount - 1,
-    //   };
-    //   updatedItems = [...state.items];
-    //   updatedItems[existingCartItemIndex] = updatedItem;
-    // }
+   if (action.type === "REMOVE") {
+
+    const existingCartItemIndex = state.items.findIndex(
+      (item) => item.id === action.id.id
+    );
+    console.log(existingCartItemIndex);
+
+    const existingCartItem = state.items[existingCartItemIndex];
+    const updatedAmount = state.totalAmount - existingCartItem.price;
+    let updatedItems;
+    if (existingCartItem.amount === 1) {
+      updatedItems = state.items.filter((item) => item.id !== action.id.id);
+    } else {
+      const updatedItem = {
+        ...existingCartItem,
+        amount: existingCartItem.amount - 1,
+      };
+      updatedItems = [...state.items];
+      updatedItems[existingCartItemIndex] = updatedItem;
+    }
 
     return {
-      items: state.items,
-      totalAmount: state.totalAmount,
+      items: updatedItems,
+      totalAmount: updatedAmount,
     };
-  } else if (action.type === "TRASH") {
-    const existingCartItemIndex=state.items.findIndex((item)=>item.id===action.id)
-    let updatedItems;
-    console.log(existingCartItemIndex);
-    updatedItems = state.items.filter((item) => item.id !== action.id);
-    return{
-      items:updatedItems,
-      totalAmount:state.totalAmount
-    }
-  }
+  } 
+  // else if (action.type === "TRASH") {
+  //   const existingCartItemIndex=state.items.findIndex((item)=>item.id===action.id)
+  //   let updatedItems;
+  //   console.log(existingCartItemIndex);
+  //   updatedItems = state.items.filter((item) => item.id !== action.id);
+  //   return{
+  //     items:updatedItems,
+  //     totalAmount:state.totalAmount
+  //   }
+  // }
   if (action.type === "RESET") return defaultCartState;
 
   return defaultCartState;

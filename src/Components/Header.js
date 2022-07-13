@@ -43,9 +43,13 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.header_right}>
+          <div className={styles.header_right_cart}>
+
           <Link to="/bag">
             <FontAwesomeIcon className={styles.logo} icon={faBagShopping} />
           </Link>
+          <span style={{fontSize:'4'}}>8</span>
+          </div>
           <div onClick={headerOverlayToggleOn}>
             <FontAwesomeIcon className={styles.logo} icon={faBars} />
           </div>

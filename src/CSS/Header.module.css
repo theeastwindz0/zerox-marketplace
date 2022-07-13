@@ -40,10 +40,14 @@
 .header_middle{
 }
 
-.header_right {
+.header_right,.header_right_cart {
     font-size: 32px;
     display: flex;
     flex-direction: row;
+}
+
+.header_right_cart{
+
 }
 .submenu{
     height: 100vh;

@@ -19,7 +19,7 @@ const CartItem = (props) => {
   }
 
   const removeItem=()=>{
-      ctx.trash({id:props.dtr.id});
+      ctx.removeItem({id:props.dtr.id});
   }
 
   return (
