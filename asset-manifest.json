@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zerox-marketplace/static/css/main.7684c7d2.css",
-    "main.js": "/zerox-marketplace/static/js/main.629fec28.js",
+    "main.css": "/zerox-marketplace/static/css/main.7b6d745f.css",
+    "main.js": "/zerox-marketplace/static/js/main.91bca25c.js",
     "static/media/iphone_12_3.jpeg": "/zerox-marketplace/static/media/iphone_12_3.e463569902305752ed3e.jpeg",
     "static/media/iphone_13_2.jpeg": "/zerox-marketplace/static/media/iphone_13_2.ffbf8499af210a95dfbe.jpeg",
     "static/media/iphone_13_1.jpg": "/zerox-marketplace/static/media/iphone_13_1.8e8e1a9bc250eb1bd11f.jpg",
@@ -15,6 +15,7 @@
     "static/media/ip13_small.jpg": "/zerox-marketplace/static/media/ip13_small.fc21dbe4c070617dc71b.jpg",
     "static/media/iphone_13_2.jpg": "/zerox-marketplace/static/media/iphone_13_2.fc21dbe4c070617dc71b.jpg",
     "static/media/iphone_se_2.jpeg": "/zerox-marketplace/static/media/iphone_se_2.dcd5309cf980bb2ab7f6.jpeg",
+    "static/media/Container_1.jpg": "/zerox-marketplace/static/media/Container_1.b5cae433e4f1edb1eda7.jpg",
     "static/media/iphone_13_1.jpeg": "/zerox-marketplace/static/media/iphone_13_1.19d90811913c72ff432c.jpeg",
     "static/media/mba_m1_large2.jpeg": "/zerox-marketplace/static/media/mba_m1_large2.67a4037f787a89ba06f6.jpeg",
     "static/media/Container_Mobile_1.jpg": "/zerox-marketplace/static/media/Container_Mobile_1.3b4ffd624650bcc02570.jpg",
@@ -24,7 +25,6 @@
     "static/media/mba_14_large_1.jpeg": "/zerox-marketplace/static/media/mba_14_large_1.dd63b3460559f9bb8ce6.jpeg",
     "static/media/mba_14_large_2.jpeg": "/zerox-marketplace/static/media/mba_14_large_2.546b3bbdecc846b349ee.jpeg",
     "static/media/mba_m1_large3.jpeg": "/zerox-marketplace/static/media/mba_m1_large3.3b45261c0046a5344329.jpeg",
-    "static/media/Container_1.jpg": "/zerox-marketplace/static/media/Container_1.cbb707c3d5cc3f5b5c2c.jpg",
     "static/media/iphone_12_2.jpeg": "/zerox-marketplace/static/media/iphone_12_2.70e7fb92be22ce7e2f76.jpeg",
     "static/media/mba_m2_small.jpeg": "/zerox-marketplace/static/media/mba_m2_small.463b512bbe03c4496987.jpeg",
     "static/media/mba_14_small_1.jpeg": "/zerox-marketplace/static/media/mba_14_small_1.ee1b04fa83f9020ecbfe.jpeg",
@@ -35,11 +35,11 @@
     "static/media/iphone_12_1.jpeg": "/zerox-marketplace/static/media/iphone_12_1.6e7c6ee042381a4b6594.jpeg",
     "static/media/mba_m1_small.png": "/zerox-marketplace/static/media/mba_m1_small.35af3bce625697e99fce.png",
     "index.html": "/zerox-marketplace/index.html",
-    "main.7684c7d2.css.map": "/zerox-marketplace/static/css/main.7684c7d2.css.map",
-    "main.629fec28.js.map": "/zerox-marketplace/static/js/main.629fec28.js.map"
+    "main.7b6d745f.css.map": "/zerox-marketplace/static/css/main.7b6d745f.css.map",
+    "main.91bca25c.js.map": "/zerox-marketplace/static/js/main.91bca25c.js.map"
   },
   "entrypoints": [
-    "static/css/main.7684c7d2.css",
-    "static/js/main.629fec28.js"
+    "static/css/main.7b6d745f.css",
+    "static/js/main.91bca25c.js"
   ]
 }
