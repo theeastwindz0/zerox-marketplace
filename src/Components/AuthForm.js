@@ -60,7 +60,7 @@ const AuthForm = () => {
       })
       .then((data) => {
         const expirationTime=new Date(new Date().getTime() +(+data.expiresIn*1000));
-        ctx.login(data.idToken,expirationTime);
+        ctx.login(data.idToken,data.localId,expirationTime);
         setError(null)
         navigate('/',{replace:true});
       })

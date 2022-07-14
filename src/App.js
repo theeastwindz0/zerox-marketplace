@@ -21,10 +21,11 @@ import Iphone13 from './Warehouse/Moblies/Iphone13';
 import Iphone12 from './Warehouse/Moblies/Iphone12';
 import IphoneSe from './Warehouse/Moblies/IphoneSE';
 import Macbook14 from './Warehouse/Laptops/Macbook14';
-import { AuthContextProvider } from './Store/AuthContext';
+import  { AuthContextProvider } from './Store/AuthContext';
 import UserLogin from './Pages/UserLogin';
 import UserProfile from './Components/UserProfile';
 function App() {
+
 
   //   const Pages=[{
   //     path:'/',
