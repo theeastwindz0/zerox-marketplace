@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import classes from '../CSS/AuthForm.module.css'
 import buttons from '../CSS/MultipleButtons.module.css'
 const AuthForm = () => {
+  
   const [isLoading, setIsLoading] = useState(false);
   const [isLogin, setIsLogin] = useState(true);
   const [error,setError]=useState(null);
@@ -61,7 +62,7 @@ const AuthForm = () => {
         const expirationTime=new Date(new Date().getTime() +(+data.expiresIn*1000));
         ctx.login(data.idToken,expirationTime);
         setError(null)
-        navigate('/',{replace:true})
+        navigate('/',{replace:true});
       })
       .catch((err) => {
         setError(err.message);
@@ -90,7 +91,7 @@ const AuthForm = () => {
           {!isLoading && (
             <button className={buttons.button2} >{isLogin ? "Login" : "Create Account"}</button>
           )}
-          {isLoading && <p>Loading.</p>}
+          {isLoading && <p>-Loading-</p>}
           <button
             type="button"
             className={classes.toggle}

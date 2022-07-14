@@ -1,0 +1,12 @@
+.userprofile{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.userprofile>*{
+    margin: 5px 0;
+}

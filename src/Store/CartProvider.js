@@ -1,4 +1,6 @@
-import React, { useReducer } from "react";
+import React, { useContext, useReducer } from "react";
+import { useNavigate } from "react-router-dom";
+import AuthContext from "./AuthContext";
 import CartContext from "./CartContext";
 import allItems from "./Data";
 
@@ -6,8 +8,8 @@ const defaultCartState = {
   items: [],
   totalAmount: 0,
 };
+
 const cartReducer = (state, action) => {
-  
   if (action.type === "ADD") {
     const currentItemIndex=allItems.findIndex((item)=>item.id===action.item.id);
     const currentItem=allItems[currentItemIndex];
@@ -77,13 +79,18 @@ const cartReducer = (state, action) => {
 };
 
 const CartProvider = (props) => {
+  const navigate=useNavigate();
+  const authCtx=useContext(AuthContext);
+
   const [cartState, dispatchCartState] = useReducer(
     cartReducer,
     defaultCartState
   );
 
   const addItemToCartHandler = (item) => {
-    dispatchCartState({ type: "ADD", item: item });
+
+    if(!authCtx.isLoggedIn) navigate('/userlogin',{replace:true})
+    else dispatchCartState({ type: "ADD", item: item });
   };
 
   const removeItemFromCartHandler = (id) => {

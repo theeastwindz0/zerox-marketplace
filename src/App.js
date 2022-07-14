@@ -23,6 +23,7 @@ import IphoneSe from './Warehouse/Moblies/IphoneSE';
 import Macbook14 from './Warehouse/Laptops/Macbook14';
 import { AuthContextProvider } from './Store/AuthContext';
 import UserLogin from './Pages/UserLogin';
+import UserProfile from './Components/UserProfile';
 function App() {
 
   //   const Pages=[{
@@ -68,6 +69,7 @@ function App() {
             <Route path="/airpords" exact element={<Airpords />} />
             <Route path="/bag" exact element={<Bag />} />
             <Route path='/userlogin' element={<UserLogin/>}/>
+            <Route path='/userprofile' element={<UserProfile/>}/>
             <Route path="/macbookairm1" element={<MacbookAirM1 />} />
             <Route path="/macbookairm2" element={<MacbookAirM2 />} />
             <Route path="/macbookprom1" element={<MacBookProM1/>}/>

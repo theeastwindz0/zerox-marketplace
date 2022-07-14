@@ -5,14 +5,21 @@ import CartContext from "../Store/CartContext";
 import styles from "../CSS/Bag.module.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBagShopping } from "@fortawesome/free-solid-svg-icons";
+import AuthContext from "../Store/AuthContext";
+import AuthForm from "../Components/AuthForm";
 const Bag = () => {
   const ctx = useContext(CartContext);
+
+  const authCtx = useContext(AuthContext);
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
   return (
     <>
-      {ctx.totalAmount !== 0 && (
+      {!authCtx.isLoggedIn && (
+        <AuthForm/>
+      )}
+      {ctx.totalAmount !== 0 && authCtx.isLoggedIn && (
         <div className={gridLayout.FlexKit_1}>
           {ctx.items.map((item) => (
             <CartItem dtr={item} key={item.id} />
@@ -32,7 +39,7 @@ const Bag = () => {
           </div>
         </div>
       )}
-      {ctx.totalAmount === 0 && (
+      {ctx.totalAmount === 0 && authCtx.isLoggedIn && (
         <div className={styles.empty_bag}>
           <FontAwesomeIcon
             className={styles.icon}

@@ -50,7 +50,9 @@ const Header = () => {
           <Buttons buttons={ctx.buttons} />
         </div>
         <div className={styles.header_right}>
-        
+        <Link to="/userprofile">
+            <FontAwesomeIcon className={styles.logo} icon={faUser} />
+          </Link>
           <Link to="/bag">
             <FontAwesomeIcon className={btnClasses} icon={faBagShopping} />
           </Link>
@@ -64,7 +66,9 @@ const Header = () => {
         </div>
         <div className={styles.header_right}>
           <div className={styles.header_right_cart}>
-
+          <Link to="/userprofile">
+            <FontAwesomeIcon className={styles.logo} icon={faUser} />
+          </Link>
           <Link to="/bag">
             <FontAwesomeIcon className={btnClasses} icon={faBagShopping} />
           </Link>
