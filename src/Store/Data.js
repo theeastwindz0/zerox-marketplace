@@ -30,6 +30,19 @@ import ipse_1 from "../Images/Mobiles/iPhoneSE/iphone_se_1.jpeg";
 import ipse_2 from "../Images/Mobiles/iPhoneSE/iphone_se_2.jpeg";
 import ipse_3 from "../Images/Mobiles/iPhoneSE/iphone_se_3.jpeg";
 
+import gen2_1 from "../Images/Airpods/gen2/gen_1.jpeg";
+import gen2_2 from "../Images/Airpods/gen2/gen_2.jpeg";
+import gen2_3 from "../Images/Airpods/gen2/gen_3.jpeg";
+
+import gen3_1 from "../Images/Airpods/gen3/gen_1.jpeg";
+import gen3_2 from "../Images/Airpods/gen3/gen_2.jpeg";
+import gen3_3 from "../Images/Airpods/gen3/gen_3.jpeg";
+
+import genpro_1 from "../Images/Airpods/genpro/gen_1.jpeg";
+import genpro_2 from "../Images/Airpods/genpro/gen_2.jpeg";
+import genpro_3 from "../Images/Airpods/genpro/gen_3.jpeg";
+
+
 
 const allItems = [
   //1
@@ -170,7 +183,7 @@ const allItems = [
         <p>Apple A14 Bionic (5 nm)</p>
         <p>15.4 cm or 13.7 cm</p>
         <p>Up to 17 hours video playback⁴</p>
-        <p>Dual-camera system </p>
+        <p>Dual-camera system</p>
         <p>Back: Glass; Frame: Stainless steel</p>
         <p> Earpiece, Loudspeaker</p>
       </>
@@ -193,7 +206,7 @@ const allItems = [
         <p>Apple A15 Bionic (5 nm)</p>
         <p>11.94 cm</p>
         <p>Up to 15 hours video playback⁴</p>
-        <p>Single-camera system </p>
+        <p>Single-camera system</p>
         <p>Touch ID</p>
         <p> Earpiece, Loudspeaker</p>
       </>
@@ -227,7 +240,81 @@ const allItems = [
     pTags: [],
     location: "/macbook14",
     amount: 1,
-  }
+  },
+    //9
+    {
+      name: "Airpods (2nd generation)",
+      pImages: [gen2_1, gen2_2, gen2_3],
+      tagline: "",
+      new: false,
+      pImage: gen2_1,
+      description: (
+        <>
+          <p>H1 chip</p>
+          <p>Hey Siri</p>
+          <p>5 hours , Up to 5 hours of listening time on one charge</p>
+          <p>More than 24 hours of listening time with charging case</p>
+          <p>Automatic switching</p>
+          <p>Charging Case</p>
+        </>
+      ),
+      id: "gen2",
+      price: 14100,
+      pTags: [],
+      location: "/gen2",
+      amount: 1,
+    },
+    //10
+    {
+      name: "Airpods (3rd generation)",
+      pImages: [gen3_1, gen3_2, gen3_3],
+      tagline: "",
+      new: false,
+      pImage: gen3_1,
+      description: (
+        <>
+        <p>Spatial audio with dynamic head tracking1</p>
+        <p>Sweat and water resistant</p>
+          <p>H1 chip</p>
+          <p>Hey Siri</p>
+          <p>5 hours , Up to 6 hours of listening time on one charge</p>
+          <p>More than 30 hours of listening time with charging case</p>
+          <p>Automatic switching</p>
+          <p>Charging Case</p>
+        </>
+      ),
+      id: "gen3",
+      price: 20500,
+      pTags: [],
+      location: "/gen3",
+      amount: 1,
+    },
+    //11
+    {
+      name: "Airpods Pro",
+      pImages: [genpro_1, genpro_2, genpro_3],
+      tagline: "",
+      new: false,
+      pImage: genpro_1,
+      description: (
+        <>
+        <p>Transparency mode</p>
+        <p>Spatial audio with dynamic head tracking1</p>
+        <p>Sweat and water resistant</p>
+          <p>H1 chip</p>
+          <p>Hey Siri</p>
+          <p>5 hours , Up to 6 hours of listening time on one charge</p>
+          <p>More than 30 hours of listening time with charging case</p>
+          <p>Automatic switching</p>
+          <p>Charging Case</p>
+        </>
+      ),
+      id: "genpro",
+      price: 24500,
+      pTags: [],
+      location: "/genpro",
+      amount: 1,
+    }
 ]
 
 export default allItems;

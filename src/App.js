@@ -4,7 +4,7 @@ import Branding from "./Components/Branding";
 import Footer from "./Components/Footer";
 import Header from "./Components/Header";
 import Accessories from "./Pages/Accessories";
-import Airpords from "./Pages/Airpords";
+import Airpods from "./Pages/Airpods";
 import Bag from "./Pages/Bag";
 import Home from "./Pages/Home";
 import Laptop from "./Pages/Laptop";
@@ -24,6 +24,9 @@ import Macbook14 from './Warehouse/Laptops/Macbook14';
 import  { AuthContextProvider } from './Store/AuthContext';
 import UserLogin from './Pages/UserLogin';
 import UserProfile from './Components/UserProfile';
+import Gen2 from './Warehouse/Airpods/Gen2';
+import Gen3 from './Warehouse/Airpods/Gen3';
+import GenPro from './Warehouse/Airpods/GenPro';
 function App() {
 
 
@@ -67,7 +70,7 @@ function App() {
             <Route path="/accessories" exact element={<Accessories />} />
             <Route path="/watch" exact element={<Watch />} />
             <Route path="/support" exact element={<Support />} />
-            <Route path="/airpords" exact element={<Airpords />} />
+            <Route path="/airpods" exact element={<Airpods />} />
             <Route path="/bag" exact element={<Bag />} />
             <Route path='/userlogin' element={<UserLogin/>}/>
             <Route path='/userprofile' element={<UserProfile/>}/>
@@ -79,6 +82,9 @@ function App() {
             <Route path='/iphone12' element={<Iphone12/>}/>
             <Route path='iphonese' element={<IphoneSe/>}/>
             <Route path='/macbook14' element={<Macbook14/>}/>
+            <Route path='/gen2' element={<Gen2/>}/>
+            <Route path='/gen3' element={<Gen3/>}/>
+            <Route path='/genpro' element={<GenPro/>}/>
           </Routes>
         </div>
         <Footer/>
