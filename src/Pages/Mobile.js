@@ -12,6 +12,9 @@ const Mobile = () => {
   return (
     <div className={styles.gridLayout2}>
       <ProductCard dtr={allItems[3]}/>      
+      <ProductCard dtr={allItems[4]}/>    
+      <ProductCard dtr={allItems[5]}/>
+      <ProductCard dtr={allItems[6]}/>
     </div>
   )
 }

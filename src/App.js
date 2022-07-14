@@ -17,7 +17,10 @@ import MacbookAirM1 from "./Warehouse/Laptops/MacbookAirM1";
 import MacbookAirM2 from "./Warehouse/Laptops/MacbookAirM2";
 import MacBookProM1 from './Warehouse/Laptops/MacBookProM1';
 import IPhone13ProMax from './Warehouse/Moblies/IPhone13ProMax';
-import { ReactDOM } from 'react-dom';
+import Iphone13 from './Warehouse/Moblies/Iphone13';
+import Iphone12 from './Warehouse/Moblies/Iphone12';
+import IphoneSe from './Warehouse/Moblies/IphoneSE';
+import Macbook14 from './Warehouse/Laptops/Macbook14';
 function App() {
   //   const Pages=[{
   //     path:'/',
@@ -64,6 +67,10 @@ function App() {
             <Route path="/macbookairm2" element={<MacbookAirM2 />} />
             <Route path="/macbookprom1" element={<MacBookProM1/>}/>
             <Route path="/iphone13promax" element={<IPhone13ProMax/>}/>
+            <Route  path="/iphone13" element={<Iphone13/>}/>
+            <Route path='/iphone12' element={<Iphone12/>}/>
+            <Route path='iphonese' element={<IphoneSe/>}/>
+            <Route path='/macbook14' element={<Macbook14/>}/>
           </Routes>
         </div>
         <Footer/>

@@ -14,6 +14,7 @@ const Laptop = () => {
       <ProductCard dtr={allItems[0]}/>    
       <ProductCard dtr={allItems[1]}/>    
       <ProductCard dtr={allItems[2]}/>    
+      <ProductCard dtr={allItems[7]}/>    
     </div>
   )
 }
