@@ -1,4 +1,4 @@
-.button1{
+.button1,.button2{
     padding:4px;
     outline: none;
     border: none;
@@ -9,10 +9,14 @@
     /* width: 20%; */
     height: 32px;
     cursor: pointer;
-
+}
+.button2{
+    background-color: white;
+    color: black;
+    width: 30%;
 }
 
-.button1:hover{
+.button1:hover,.button2:hover{
     background-color: palevioletred;
 }
 

@@ -1,11 +1,10 @@
 import React from 'react'
 import AuthForm from '../Components/AuthForm'
 
-const Support = () => {
+const UserLogin = () => {
   return (
-    <>
-    </>
+      <AuthForm/>
   )
 }
 
-export default Support
+export default UserLogin

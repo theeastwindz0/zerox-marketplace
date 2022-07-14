@@ -4,7 +4,7 @@ import styles from "../CSS/Header.module.css";
 import logo from "../Images/logo.png";
 import Buttons from "./Buttons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBagShopping, faBars ,faXmark} from "@fortawesome/free-solid-svg-icons";
+import { faBagShopping, faBars ,faUser,faXmark} from "@fortawesome/free-solid-svg-icons";
 import NavigationProvider from "../Store/NavigationProvider";
 import navigationContext from "../Store/NavigationContext";
 import CartContext from "../Store/CartContext";
@@ -50,6 +50,7 @@ const Header = () => {
           <Buttons buttons={ctx.buttons} />
         </div>
         <div className={styles.header_right}>
+        
           <Link to="/bag">
             <FontAwesomeIcon className={btnClasses} icon={faBagShopping} />
           </Link>
