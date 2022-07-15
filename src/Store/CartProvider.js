@@ -19,6 +19,18 @@ const updateCart = async (items, totalAmount, localid) => {
   const data = await response.json();
 };
 
+const placeOrder=async(items,totalAmount,localid,details)=>{
+  //eslint-disable-next-line
+  const response=await fetch(`https://mini-3daaa-default-rtdb.firebaseio.com/${localid}/orders.json`,
+  {
+    method:'POST',
+    body:JSON.stringify({items:items,totalAmount:totalAmount,details:details}),
+    headers:{
+      'Content-Type':"application/json"
+    }
+  })
+}
+
 const defaultCartState = {
   items: [],
   totalAmount: 0,
@@ -86,6 +98,11 @@ const cartReducer = (state, action) => {
 
   if (action.type === "RESET") return defaultCartState;
 
+  if(action.type==='ORDER'){
+
+    placeOrder(state.items,state.totalAmount,action.item.localid,action.item.details);
+  }
+
   if (action.type === "UPDATE") {
     return {
       items: action.item.data.totalAmount ? action.item.data.items:[],
@@ -122,12 +139,16 @@ const CartProvider = (props) => {
   const trashHandler = (id) => {
     dispatchCartState({ type: "TRASH", id: id });
   };
+  const orderHandler=(details)=>{
+    dispatchCartState({type:'ORDER',item:{localid,details}})
+  }
 
   const cartContext = {
     items: cartState.items,
     totalAmount: cartState.totalAmount,
     addItem: addItemToCartHandler,
     removeItem: removeItemFromCartHandler,
+    order:orderHandler,
     resetCart: resetCartHandler,
     trash: trashHandler,
   };

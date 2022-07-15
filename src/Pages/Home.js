@@ -27,15 +27,15 @@ const Home = () => {
     productImage:section_image_1,
     backgroundColor:'black',
     color:'white',
-    buttonLocation:'/'
+    buttonLocation:'/ipadair'
   },
   {
-    title:'iPhone 13 Pro',
+    title:'iPhone 13 Pro Max',
     tagline:'So Pro',
     productImage:section_image_2,
     backgroundColor:'white',
     color:'black',
-    buttonLocation:'/'
+    buttonLocation:'/iphone13promax'
   },
   {
     title:'Watch',
@@ -43,7 +43,7 @@ const Home = () => {
     productImage:section_image_3,
     backgroundColor:'white',
     color:'black',
-    buttonLocation:'/'
+    buttonLocation:'/watch7'
   }, {
     title:'Credit Card',
     tagline:'3% cashback',

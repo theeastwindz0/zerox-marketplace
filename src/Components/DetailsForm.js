@@ -1,9 +1,15 @@
 import styles from "../CSS/Form.module.css";
-import React, {  useState } from "react";
+import React, {  useContext, useState } from "react";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import CartContext from "../Store/CartContext";
+import { useNavigate } from "react-router-dom";
 
 const DetailsForm = (props) => {
+
+  const navigate=useNavigate();
+
+  const cartCtx=useContext(CartContext);
 
   const [firstname, setFirstname] = useState("");
   const [lastname, setLastname] = useState("");
@@ -66,10 +72,8 @@ const DetailsForm = (props) => {
       setLastname("");
       setPhone("");
       setMessage("");
-
-    //   props.formDataSubmit(formDataToSend);
+      cartCtx.order(formDataToSend);
       onModalShowHandler();
-      console.log(formDataToSend);
     }
   };
 
@@ -79,6 +83,8 @@ const DetailsForm = (props) => {
 
   const onModalHideHandler = () => {
     setHasSubmitted(false);
+    navigate('/userprofile',{replace:true})
+
   };
 
   return (
@@ -89,7 +95,7 @@ const DetailsForm = (props) => {
             <span className={styles.icons}>
               <FontAwesomeIcon icon={faCheckCircle} />
             </span>
-            Your details were submitted.
+            Your order have been placed.
           </p>
           <button onClick={onModalHideHandler}>Close</button>
         </div>
@@ -143,8 +149,10 @@ const DetailsForm = (props) => {
             />
           </div>
           {messageError && <p className={styles.error}>Message is Required</p>}
-
-          <button onClick={onSubmitHandler}>SUBMIT</button>
+          <div className={styles.buttons}>
+          <button onClick={props.onCancelHandler}>CANCEL</button>
+          <button onClick={onSubmitHandler}>ORDER</button>
+          </div>
         </form>
       </div>
     </React.Fragment>

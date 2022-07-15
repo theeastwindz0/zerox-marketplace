@@ -25,6 +25,12 @@ font-size: 100px;
     width: 60%;
 }
 
+.order_button{
+    margin-top: 20px;
+}
+
+
+
 @media (max-width:900px){
     .total{
         width:80%;

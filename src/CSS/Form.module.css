@@ -18,6 +18,7 @@
     padding: 20px;
     margin: 20px;
     box-sizing: border-box;
+;
   }
   .form_box_1 {
     display: flex;
@@ -68,17 +69,19 @@
       
       cursor: pointer;
       
-      background-color: #efefef;
-      color: black;
+      background-color: black;
+      color: white;
   }
   
-  .form button {
-   
-      align-self: flex-start;
-    }
+.buttons{
+display: flex;
+flex-direction: row ;
+align-items: center;
+justify-content: center;
+}
   
   .form button:hover {
-    background-color: purple;
+    background-color: palevioletred;
   }
   
   .error {
