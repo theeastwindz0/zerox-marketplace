@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/zerox-marketplace/static/css/main.a2a1fcea.css",
-    "main.js": "/zerox-marketplace/static/js/main.86683c71.js",
+    "main.css": "/zerox-marketplace/static/css/main.abef96a7.css",
+    "main.js": "/zerox-marketplace/static/js/main.f123320c.js",
     "static/media/ipad_3.jpeg": "/zerox-marketplace/static/media/ipad_3.1553bad688a989ed1ec1.jpeg",
     "static/media/ipad_2.jpeg": "/zerox-marketplace/static/media/ipad_2.488f0a1d9de340df101c.jpeg",
     "static/media/ipad_1.jpeg": "/zerox-marketplace/static/media/ipad_1.7bcb362e0490c1c8a279.jpeg",
@@ -28,6 +28,8 @@
     "static/media/mba_14_large_1.jpeg": "/zerox-marketplace/static/media/mba_14_large_1.dd63b3460559f9bb8ce6.jpeg",
     "static/media/mba_14_large_2.jpeg": "/zerox-marketplace/static/media/mba_14_large_2.546b3bbdecc846b349ee.jpeg",
     "static/media/mba_m1_large3.jpeg": "/zerox-marketplace/static/media/mba_m1_large3.3b45261c0046a5344329.jpeg",
+    "static/media/watch_1.jpeg": "/zerox-marketplace/static/media/watch_1.fd951bf5a2b5a5e39da6.jpeg",
+    "static/media/watch_2.jpeg": "/zerox-marketplace/static/media/watch_2.965e04a7a80d9cc9b990.jpeg",
     "static/media/iphone_12_2.jpeg": "/zerox-marketplace/static/media/iphone_12_2.70e7fb92be22ce7e2f76.jpeg",
     "static/media/mba_m2_small.jpeg": "/zerox-marketplace/static/media/mba_m2_small.463b512bbe03c4496987.jpeg",
     "static/media/mba_14_small_1.jpeg": "/zerox-marketplace/static/media/mba_14_small_1.ee1b04fa83f9020ecbfe.jpeg",
@@ -41,11 +43,11 @@
     "static/media/iphone_12_1.jpeg": "/zerox-marketplace/static/media/iphone_12_1.6e7c6ee042381a4b6594.jpeg",
     "static/media/mba_m1_small.png": "/zerox-marketplace/static/media/mba_m1_small.35af3bce625697e99fce.png",
     "index.html": "/zerox-marketplace/index.html",
-    "main.a2a1fcea.css.map": "/zerox-marketplace/static/css/main.a2a1fcea.css.map",
-    "main.86683c71.js.map": "/zerox-marketplace/static/js/main.86683c71.js.map"
+    "main.abef96a7.css.map": "/zerox-marketplace/static/css/main.abef96a7.css.map",
+    "main.f123320c.js.map": "/zerox-marketplace/static/js/main.f123320c.js.map"
   },
   "entrypoints": [
-    "static/css/main.a2a1fcea.css",
-    "static/js/main.86683c71.js"
+    "static/css/main.abef96a7.css",
+    "static/js/main.f123320c.js"
   ]
 }
