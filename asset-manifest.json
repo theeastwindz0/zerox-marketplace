@@ -1,7 +1,10 @@
 {
   "files": {
     "main.css": "/zerox-marketplace/static/css/main.a2a1fcea.css",
-    "main.js": "/zerox-marketplace/static/js/main.c4f9101d.js",
+    "main.js": "/zerox-marketplace/static/js/main.86683c71.js",
+    "static/media/ipad_3.jpeg": "/zerox-marketplace/static/media/ipad_3.1553bad688a989ed1ec1.jpeg",
+    "static/media/ipad_2.jpeg": "/zerox-marketplace/static/media/ipad_2.488f0a1d9de340df101c.jpeg",
+    "static/media/ipad_1.jpeg": "/zerox-marketplace/static/media/ipad_1.7bcb362e0490c1c8a279.jpeg",
     "static/media/iphone_12_3.jpeg": "/zerox-marketplace/static/media/iphone_12_3.e463569902305752ed3e.jpeg",
     "static/media/iphone_13_2.jpeg": "/zerox-marketplace/static/media/iphone_13_2.ffbf8499af210a95dfbe.jpeg",
     "static/media/iphone_13_1.jpg": "/zerox-marketplace/static/media/iphone_13_1.8e8e1a9bc250eb1bd11f.jpg",
@@ -39,10 +42,10 @@
     "static/media/mba_m1_small.png": "/zerox-marketplace/static/media/mba_m1_small.35af3bce625697e99fce.png",
     "index.html": "/zerox-marketplace/index.html",
     "main.a2a1fcea.css.map": "/zerox-marketplace/static/css/main.a2a1fcea.css.map",
-    "main.c4f9101d.js.map": "/zerox-marketplace/static/js/main.c4f9101d.js.map"
+    "main.86683c71.js.map": "/zerox-marketplace/static/js/main.86683c71.js.map"
   },
   "entrypoints": [
     "static/css/main.a2a1fcea.css",
-    "static/js/main.c4f9101d.js"
+    "static/js/main.86683c71.js"
   ]
 }
