@@ -10,3 +10,33 @@
 .userprofile>*{
     margin: 5px 0;
 }
+
+.orders{
+    border: 1px solid red;
+    width: 50%;
+    padding: 20px;
+}
+
+.orders_items{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+
+    border:1px solid red;
+    margin: 10px auto;
+    padding: 0px 20px;
+}
+
+.orders_items>*{
+}
+
+@media (max-width:900px){
+    .orders{
+        width: 70%;
+    }
+}
+
+@media (max-width:600px){
+    .orders{
+        width: 90%;
+    }
+}

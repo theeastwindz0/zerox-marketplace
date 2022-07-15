@@ -101,6 +101,11 @@ const cartReducer = (state, action) => {
   if(action.type==='ORDER'){
 
     placeOrder(state.items,state.totalAmount,action.item.localid,action.item.details);
+    updateCart([],0,action.item.localid);
+    return{
+      items:[],
+      totalAmount:0
+    }
   }
 
   if (action.type === "UPDATE") {
