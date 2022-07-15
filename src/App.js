@@ -29,6 +29,8 @@ import Gen3 from './Warehouse/Airpods/Gen3';
 import GenPro from './Warehouse/Airpods/GenPro';
 import IPadAir from './Warehouse/IPad/IPadAir';
 import IPadPro from './Warehouse/IPad/IPadPro';
+import WatchSE from './Warehouse/Watch/WatchSE';
+import Watch7 from './Warehouse/Watch/Watch7';
 function App() {
 
 
@@ -89,6 +91,8 @@ function App() {
             <Route path='/genpro' element={<GenPro/>}/>
             <Route path='/ipadair' element={<IPadAir/>}/>
             <Route path='/ipadpro' element={<IPadPro/>}/>
+            <Route path='/watchse' element={<WatchSE/>}/>
+            <Route path='/watch7' element={<Watch7/>}/>
           </Routes>
         </div>
         <Footer/>

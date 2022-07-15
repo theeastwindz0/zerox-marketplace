@@ -42,14 +42,19 @@ import genpro_1 from "../Images/Airpods/genpro/gen_1.jpeg";
 import genpro_2 from "../Images/Airpods/genpro/gen_2.jpeg";
 import genpro_3 from "../Images/Airpods/genpro/gen_3.jpeg";
 
-import ipada_1 from '../Images/iPad/iPadAir/ipad_1.jpeg'
-import ipada_2 from '../Images/iPad/iPadAir/ipad_2.jpeg'
-import ipada_3 from '../Images/iPad/iPadAir/ipad_3.jpeg'
+import ipada_1 from "../Images/iPad/iPadAir/ipad_1.jpeg";
+import ipada_2 from "../Images/iPad/iPadAir/ipad_2.jpeg";
+import ipada_3 from "../Images/iPad/iPadAir/ipad_3.jpeg";
 
-import ipadp_1 from '../Images/iPad/iPadPro/ipad_1.jpeg'
-import ipadp_2 from '../Images/iPad/iPadPro/ipad_2.jpeg'
-import ipadp_3 from '../Images/iPad/iPadPro/ipad_3.jpeg'
+import ipadp_1 from "../Images/iPad/iPadPro/ipad_1.jpeg";
+import ipadp_2 from "../Images/iPad/iPadPro/ipad_2.jpeg";
+import ipadp_3 from "../Images/iPad/iPadPro/ipad_3.jpeg";
 
+import watchse_1 from "../Images/Watches/WatchSe/watch_1.jpeg";
+import watchse_2 from "../Images/Watches/WatchSe/watch_2.jpeg";
+
+import watch7_1 from "../Images/Watches/Watch7/watch_1.jpeg";
+import watch7_2 from "../Images/Watches/Watch7/watch_2.jpeg";
 
 const allItems = [
   //1
@@ -238,7 +243,10 @@ const allItems = [
         <p>5126GB SSD storage</p>
         <p>67W USB-C Power Adapter</p>
         <p>35.97 cm (14.2-inch) Liquid Retina XDR display</p>
-        <p> Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port</p>
+        <p>
+          {" "}
+          Three Thunderbolt 4 ports, HDMI port, SDXC card slot, MagSafe 3 port
+        </p>
         <p>Backlit Magic Keyboard with Touch ID - US English</p>
       </>
     ),
@@ -248,128 +256,188 @@ const allItems = [
     location: "/macbook14",
     amount: 1,
   },
-    //9
-    {
-      name: "Airpods (2nd generation)",
-      pImages: [gen2_1, gen2_2, gen2_3],
-      tagline: "",
-      new: false,
-      pImage: gen2_1,
-      description: (
-        <>
-          <p>H1 chip</p>
-          <p>Hey Siri</p>
-          <p>5 hours , Up to 5 hours of listening time on one charge</p>
-          <p>More than 24 hours of listening time with charging case</p>
-          <p>Automatic switching</p>
-          <p>Charging Case</p>
-        </>
-      ),
-      id: "gen2",
-      price: 14100,
-      pTags: [],
-      location: "/gen2",
-      amount: 1,
-    },
-    //10
-    {
-      name: "Airpods (3rd generation)",
-      pImages: [gen3_1, gen3_2, gen3_3],
-      tagline: "",
-      new: false,
-      pImage: gen3_1,
-      description: (
-        <>
+  //9
+  {
+    name: "Airpods (2nd generation)",
+    pImages: [gen2_1, gen2_2, gen2_3],
+    tagline: "",
+    new: false,
+    pImage: gen2_1,
+    description: (
+      <>
+        <p>H1 chip</p>
+        <p>Hey Siri</p>
+        <p>5 hours , Up to 5 hours of listening time on one charge</p>
+        <p>More than 24 hours of listening time with charging case</p>
+        <p>Automatic switching</p>
+        <p>Charging Case</p>
+      </>
+    ),
+    id: "gen2",
+    price: 14100,
+    pTags: [],
+    location: "/gen2",
+    amount: 1,
+  },
+  //10
+  {
+    name: "Airpods (3rd generation)",
+    pImages: [gen3_1, gen3_2, gen3_3],
+    tagline: "",
+    new: false,
+    pImage: gen3_1,
+    description: (
+      <>
         <p>Spatial audio with dynamic head tracking1</p>
         <p>Sweat and water resistant</p>
-          <p>H1 chip</p>
-          <p>Hey Siri</p>
-          <p>5 hours , Up to 6 hours of listening time on one charge</p>
-          <p>More than 30 hours of listening time with charging case</p>
-          <p>Automatic switching</p>
-          <p>Charging Case</p>
-        </>
-      ),
-      id: "gen3",
-      price: 20500,
-      pTags: [],
-      location: "/gen3",
-      amount: 1,
-    },
-    //11
-    {
-      name: "Airpods Pro",
-      pImages: [genpro_1, genpro_2, genpro_3],
-      tagline: "",
-      new: false,
-      pImage: genpro_1,
-      description: (
-        <>
+        <p>H1 chip</p>
+        <p>Hey Siri</p>
+        <p>5 hours , Up to 6 hours of listening time on one charge</p>
+        <p>More than 30 hours of listening time with charging case</p>
+        <p>Automatic switching</p>
+        <p>Charging Case</p>
+      </>
+    ),
+    id: "gen3",
+    price: 20500,
+    pTags: [],
+    location: "/gen3",
+    amount: 1,
+  },
+  //11
+  {
+    name: "Airpods Pro",
+    pImages: [genpro_1, genpro_2, genpro_3],
+    tagline: "",
+    new: false,
+    pImage: genpro_1,
+    description: (
+      <>
         <p>Transparency mode</p>
         <p>Spatial audio with dynamic head tracking1</p>
         <p>Sweat and water resistant</p>
-          <p>H1 chip</p>
-          <p>Hey Siri</p>
-          <p>5 hours , Up to 6 hours of listening time on one charge</p>
-          <p>More than 30 hours of listening time with charging case</p>
-          <p>Automatic switching</p>
-          <p>Charging Case</p>
-        </>
-      ),
-      id: "genpro",
-      price: 24500,
-      pTags: [],
-      location: "/genpro",
-      amount: 1,
-    },
-    //12
-    {
-      name: "iPad Air",
-      pImages: [ipada_1,ipada_2 ,ipada_3 ],
-      tagline: "",
-      new: false,
-      pImage: ipada_1,
-      description: (
-        <>
+        <p>H1 chip</p>
+        <p>Hey Siri</p>
+        <p>5 hours , Up to 6 hours of listening time on one charge</p>
+        <p>More than 30 hours of listening time with charging case</p>
+        <p>Automatic switching</p>
+        <p>Charging Case</p>
+      </>
+    ),
+    id: "genpro",
+    price: 24500,
+    pTags: [],
+    location: "/genpro",
+    amount: 1,
+  },
+  //12
+  {
+    name: "iPad Air",
+    pImages: [ipada_1, ipada_2, ipada_3],
+    tagline: "",
+    new: false,
+    pImage: ipada_1,
+    description: (
+      <>
         <p>M1 chip</p>
         <p>12MP Wide back camera</p>
         <p>Ultra Wide front camera with Center Stage</p>
-          <p>USB-C connector</p>
-          <p>5G cellular</p>
-          <p>Works with Apple Pencil (2nd generation)</p>
-          <p>Works with Magic Keyboard Smart Keyboard Folio</p>
-        </>
-      ),
-      id: "ipadair",
-      price: 54900,
-      pTags: [],
-      location: "/ipadair",
-      amount: 1,
-    },
-    //13
-    {
-      name: "iPad Pro",
-      pImages: [ipadp_2 ,ipadp_3,ipadp_1 ],
-      tagline: "",
-      new: false,
-      pImage: ipadp_2,
-      description: (
-        <>
+        <p>USB-C connector</p>
+        <p>5G cellular</p>
+        <p>Works with Apple Pencil (2nd generation)</p>
+        <p>Works with Magic Keyboard Smart Keyboard Folio</p>
+      </>
+    ),
+    id: "ipadair",
+    price: 54900,
+    pTags: [],
+    location: "/ipadair",
+    amount: 1,
+  },
+  //13
+  {
+    name: "iPad Pro",
+    pImages: [ipadp_2, ipadp_3, ipadp_1],
+    tagline: "",
+    new: false,
+    pImage: ipadp_2,
+    description: (
+      <>
         <p>M1 chip</p>
         <p>12MP Wide and 10MP Ultra Wide back cameras</p>
         <p>TrueDepth front camera with Centre Stage</p>
-          <p>USB-C connector with support for Thunderbolt / USB 4</p>
-          <p>5G cellular</p>
-          <p>Works with Apple Pencil (2nd generation)</p>
-          <p>Works with Magic Keyboard Smart Keyboard Folio</p>
-        </>
-      ),
-      id: "ipadpro",
-      price: 71900,
-      pTags: [],
-      location: "/ipadpro",
-      amount: 1,
-    }
-]
+        <p>USB-C connector with support for Thunderbolt / USB 4</p>
+        <p>5G cellular</p>
+        <p>Works with Apple Pencil (2nd generation)</p>
+        <p>Works with Magic Keyboard Smart Keyboard Folio</p>
+      </>
+    ),
+    id: "ipadpro",
+    price: 71900,
+    pTags: [],
+    location: "/ipadpro",
+    amount: 1,
+  },
+  //14
+  {
+    name: "Watch SE",
+    pImages: [watchse_1, watchse_2],
+    tagline: "",
+    new: false,
+    pImage: watchse_1,
+    description: (
+      <>
+        <p> 44 mm or 40 mm case size </p>
+        <p> Retina display </p>
+        <p>Water resistant,Swim Proof</p>
+        <p> High and low heart rate notifications </p>
+        <p>Irregular heart rhythm notification</p>
+        <p>Emergency SOS</p>
+        <p>International emergency calling</p>
+        <p> Fall detection </p>
+        <p>Compass</p>
+        <p> Always-on altimeter </p>
+        <p>Available cellular connectivity</p>
+        <p>Up to 18 hours</p>
+      </>
+    ),
+    id: "watchse",
+    price: 29900,
+    pTags: [],
+    location: "/watchse",
+    amount: 1,
+  },
+  //15
+  {
+    name: "Watch Series 7",
+    pImages: [watch7_1, watch7_2],
+    tagline: "",
+    new: false,
+    pImage: watch7_1,
+    description: (
+      <>
+        <p> 45 mm or 41 mm case size </p>
+        <p>  Always-On Retina display  </p>
+        <p>Water resistant,Swim Proof</p>
+        <p>Blood Oxygen app</p>
+        <p>ECG app</p>
+        <p> High and low heart rate notifications </p>
+        <p>Irregular heart rhythm notification</p>
+        <p>Emergency SOS</p>
+        <p>International emergency calling</p>
+        <p> Fall detection </p>
+        <p>Compass</p>
+        <p> Always-on altimeter </p>
+        <p>Available cellular connectivity</p>
+        <p>Up to 18 hours</p>
+      </>
+    ),
+    id: "watch7",
+    price: 41900,
+    pTags: [],
+    location: "/watch7",
+    amount: 1,
+  },
+];
 
 export default allItems;
