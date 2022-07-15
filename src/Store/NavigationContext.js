@@ -4,7 +4,7 @@ const navigationContext = React.createContext({
     { title: "LAPTOP", location: "/laptop" },
     { title: "MOBILE", location: "/mobile" },
     { title: "AIRPODS", location: "/airpods" },
-    { title: "TABLET", location: "/tablet" },
+    { title: "IPAD", location: "/ipad" },
     { title: "WATCH", location: "/watch" },
     { title: "ACCESSORIES", location: "/accessories" },
     { title: "SUPPORT", location: "/support" },

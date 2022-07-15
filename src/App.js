@@ -27,6 +27,8 @@ import UserProfile from './Components/UserProfile';
 import Gen2 from './Warehouse/Airpods/Gen2';
 import Gen3 from './Warehouse/Airpods/Gen3';
 import GenPro from './Warehouse/Airpods/GenPro';
+import IPadAir from './Warehouse/IPad/IPadAir';
+import IPadPro from './Warehouse/IPad/IPadPro';
 function App() {
 
 
@@ -66,7 +68,7 @@ function App() {
             <Route path="/" exact element={<Home />} />
             <Route path="/laptop" exact element={<Laptop />} />
             <Route path="/mobile" exact element={<Mobile />} />
-            <Route path="/tablet" exact element={<Tablet />} />
+            <Route path="/ipad" exact element={<Tablet />} />
             <Route path="/accessories" exact element={<Accessories />} />
             <Route path="/watch" exact element={<Watch />} />
             <Route path="/support" exact element={<Support />} />
@@ -85,6 +87,8 @@ function App() {
             <Route path='/gen2' element={<Gen2/>}/>
             <Route path='/gen3' element={<Gen3/>}/>
             <Route path='/genpro' element={<GenPro/>}/>
+            <Route path='/ipadair' element={<IPadAir/>}/>
+            <Route path='/ipadpro' element={<IPadPro/>}/>
           </Routes>
         </div>
         <Footer/>

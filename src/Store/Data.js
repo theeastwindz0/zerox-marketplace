@@ -42,6 +42,13 @@ import genpro_1 from "../Images/Airpods/genpro/gen_1.jpeg";
 import genpro_2 from "../Images/Airpods/genpro/gen_2.jpeg";
 import genpro_3 from "../Images/Airpods/genpro/gen_3.jpeg";
 
+import ipada_1 from '../Images/iPad/iPadAir/ipad_1.jpeg'
+import ipada_2 from '../Images/iPad/iPadAir/ipad_2.jpeg'
+import ipada_3 from '../Images/iPad/iPadAir/ipad_3.jpeg'
+
+import ipadp_1 from '../Images/iPad/iPadPro/ipad_1.jpeg'
+import ipadp_2 from '../Images/iPad/iPadPro/ipad_2.jpeg'
+import ipadp_3 from '../Images/iPad/iPadPro/ipad_3.jpeg'
 
 
 const allItems = [
@@ -313,6 +320,54 @@ const allItems = [
       price: 24500,
       pTags: [],
       location: "/genpro",
+      amount: 1,
+    },
+    //12
+    {
+      name: "iPad Air",
+      pImages: [ipada_1,ipada_2 ,ipada_3 ],
+      tagline: "",
+      new: false,
+      pImage: ipada_1,
+      description: (
+        <>
+        <p>M1 chip</p>
+        <p>12MP Wide back camera</p>
+        <p>Ultra Wide front camera with Center Stage</p>
+          <p>USB-C connector</p>
+          <p>5G cellular</p>
+          <p>Works with Apple Pencil (2nd generation)</p>
+          <p>Works with Magic Keyboard Smart Keyboard Folio</p>
+        </>
+      ),
+      id: "ipadair",
+      price: 54900,
+      pTags: [],
+      location: "/ipadair",
+      amount: 1,
+    },
+    //13
+    {
+      name: "iPad Pro",
+      pImages: [ipadp_2 ,ipadp_3,ipadp_1 ],
+      tagline: "",
+      new: false,
+      pImage: ipadp_2,
+      description: (
+        <>
+        <p>M1 chip</p>
+        <p>12MP Wide and 10MP Ultra Wide back cameras</p>
+        <p>TrueDepth front camera with Centre Stage</p>
+          <p>USB-C connector with support for Thunderbolt / USB 4</p>
+          <p>5G cellular</p>
+          <p>Works with Apple Pencil (2nd generation)</p>
+          <p>Works with Magic Keyboard Smart Keyboard Folio</p>
+        </>
+      ),
+      id: "ipadpro",
+      price: 71900,
+      pTags: [],
+      location: "/ipadpro",
       amount: 1,
     }
 ]
