@@ -1,0 +1,22 @@
+.product_suggestion{
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 100%;
+    width: 200px;
+}
+
+.product_suggestion :nth-child(1){
+    height: 200px;
+
+}
+.product_suggestion img{
+}
+
+
+@media (max-width:900px){
+
+}

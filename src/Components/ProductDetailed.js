@@ -15,6 +15,7 @@ import buttons from "../CSS/MultipleButtons.module.css";
 import { useContext, useEffect, useState } from "react";
 import CartContext from "../Store/CartContext";
 import { Link } from "react-router-dom";
+import ProductSuggestion from "./ProductSuggestion";
 
 const ProductDetailed = (props) => {
 
@@ -38,7 +39,7 @@ const ProductDetailed = (props) => {
   }, []);
 
   return (
-    <>
+    <div className={gridLayout.FlexKit_1}>
       <div className={gridLayout.FlexKit_2}>
         <div className={styles.box_1}>
           <h4 className={styles.title}>Products/{props.dtr.name}</h4>
@@ -95,7 +96,8 @@ const ProductDetailed = (props) => {
           </div>
         </div>
       </div>
-    </>
+        <ProductSuggestion productTag={props.dtr.pTags[0]} productId={props.dtr.id}/>
+    </div>
   );
 };
 
