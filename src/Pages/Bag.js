@@ -23,9 +23,9 @@ const Bag = () => {
     setOrdered(true);
   };
 
-  const onCancelHandler=()=>{
+  const onCancelHandler = () => {
     setOrdered(false);
-  }
+  };
   return (
     <div className={styles.bag}>
       {!ordered && (
@@ -55,7 +55,7 @@ const Bag = () => {
                   className={buttons.button1}
                   onClick={orderButtonHandler}
                 >
-                  ORDER
+                  CHECKOUT
                 </button>
               </div>
             </div>

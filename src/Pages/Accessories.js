@@ -2,7 +2,7 @@ import React from 'react'
 
 const Accessories = () => {
   return (
-    <div>Accessories</div>
+    <div style={{textAlign:'center'}}><h1>COMING SOON</h1></div>
   )
 }
 

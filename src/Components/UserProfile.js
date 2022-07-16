@@ -22,7 +22,6 @@ const UserProfile = () => {
     }
 
     setOrders(orderedItems);
-    console.log(orderedItems);
   };
 
   useEffect(() => {
@@ -40,15 +39,15 @@ const UserProfile = () => {
               <h2>ORDER DETAILS</h2>
             <div className={styles.orders}>
               {orders[orders.length - 1].items.map((currentItem)=>(
-                <>
-                 <div key={currentItem.id} className={styles.orders_items}>
+                <div key={currentItem.id} >
+                 <div  className={styles.orders_items}>
                  <h3>{currentItem.name}</h3>
                  <h3>X  {currentItem.amount}</h3>
                  <h3>{currentItem.price}</h3>
                  <h3>Subtotal : {currentItem.price * currentItem.amount}</h3>
                </div>
                <div className={styles.order_status}> <FontAwesomeIcon style={{color:'green',fontSize:'20px'}} icon={faTruck}></FontAwesomeIcon> ORDER STATUS :<span  style={{color:"green"}}>ORDER CONFIRMED</span></div>
-               </>
+               </div>
               ))
               }
               <h2>TOTAL : <span style={{color:'red'}}>{orders[orders.length-1].totalAmount}</span></h2>

@@ -31,6 +31,7 @@ import IPadAir from './Warehouse/IPad/IPadAir';
 import IPadPro from './Warehouse/IPad/IPadPro';
 import WatchSE from './Warehouse/Watch/WatchSE';
 import Watch7 from './Warehouse/Watch/Watch7';
+import PageNotFound from './Pages/PageNotFound';
 function App() {
 
 
@@ -93,6 +94,7 @@ function App() {
             <Route path='/ipadpro' element={<IPadPro/>}/>
             <Route path='/watchse' element={<WatchSE/>}/>
             <Route path='/watch7' element={<Watch7/>}/>
+            <Route path='*' element={<PageNotFound/>}/>
           </Routes>
         </div>
         <Footer/>
