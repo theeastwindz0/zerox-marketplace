@@ -20,7 +20,7 @@
 }
 
 
-@media(max-width:900px) {
+@media(max-width:1400px) {
     .gridLayout2{
         grid-template-columns: 1fr;
     }
@@ -28,6 +28,9 @@
     .FlexKit_2{
         flex-direction: column;
 
+        padding: 10px;
+    }
+    .FlexKit_1{
         padding: 10px;
     }
 }
